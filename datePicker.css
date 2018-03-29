@@ -1,0 +1,279 @@
+.datePicker {
+  position: absolute;
+  left: 0px;
+  z-index: 100;
+  background-color: white;
+  line-height: normal;
+  white-space: nowrap;
+  display: none;
+}
+.datePicker-t {
+  min-width: 413px;
+  font-size: 12px;
+  font-family: Arial,Helvetica,Verdana,sans-serif;
+  -webkit-box-shadow: 0 1px 3px #bbb;
+     -moz-box-shadow: 0 1px 3px #bbb;
+          box-shadow: 0 1px 3px #bbb;
+}
+.datePicker-table-wrapper {
+  padding: 5px 0px 10px 0px;
+}
+.datePicker-date-table {
+  padding: 0 5px;
+}
+.table-range {
+  float: left;
+}
+.table-range~.table-range {
+  border-left: 1px solid #e3e3e3;
+}
+.datePicker-date-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.datePicker-date-table th,
+.datePicker-date-table td {
+  width: 28px;
+  height: 23px;
+  margin: 0;
+  padding: 0;  
+  text-align: center;
+}
+.datePicker-t .datePicker-date-table td.other:hover {
+  cursor: default;
+}
+.datePicker-t .datePicker-date-table td:not(.other):hover {
+  background-color: #00a690;
+  color: white;
+  cursor: pointer;
+}
+.datePicker-t .datePicker-date-table td.selected {
+  background-color: #00a690;
+  color: white;
+}
+.datePicker-t .datePicker-date-table td.sel-left {
+  background-image: url('https://cc.ddcdn.com/img2/date_picker/triangleLeft.png') ;
+  background-repeat:  no-repeat;
+  background-attachment:  scroll;
+  background-position:  right top;
+}
+.datePicker-t .datePicker-date-table td.sel-right{
+  background-image: url('https://cc.ddcdn.com/img2/date_picker/triangleRight.png');
+  background-repeat:  no-repeat;
+  background-attachment:  scroll;
+  background-position:left top;
+}
+td.gray:not(.other){
+  background-color: #e3e3e3;
+}
+.datePicker-footer,
+.datePicker-month,
+.datePicker-title {
+  text-align: center;
+}
+.datePicker-header {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.datePicker-header,
+.datePicker-footer {
+  border-top: 1px solid #ebebeb;
+  background-color: #f1f1f1;
+  padding: 0.4em 0;
+}
+.datePicker-month,
+.datePicker-footer {
+  padding: 0.4em 0;
+}
+
+.datePicker-table-wrapper {
+  position: relative;
+}
+
+.datePicker-t .datePicker-prev,
+.datePicker-t .datePicker-next {
+  position: absolute;
+  background-color: #a8a8a8;
+  width: 1.33em;
+  height: 1.33em;
+  padding: 0;
+  margin: 0;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  top: 0.4em;}
+.datePicker-t .datePicker-prev {
+  left: 0.6em;
+}
+.datePicker-t .datePicker-next {
+  right: 0.6em;
+}
+.datePicker-t .datePicker-prev:after,
+.datePicker-t .datePicker-next:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.48em solid transparent;
+  top: 0.25em;
+}
+
+.datePicker-t .datePicker-prev:after {
+  border-right-color: white;
+  right: 0.48em;
+}
+.datePicker-t .datePicker-next:after {
+  border-left-color: white;
+  left: 0.48em;
+}
+.clearfix { 
+  *zoom: 1; 
+} 
+ 
+.clearfix:before, 
+.clearfix:after { 
+  display: table; 
+  line-height: 0; 
+  content: ""; 
+} 
+ 
+.clearfix:after { 
+  clear: both; 
+} 
+
+
+.datePicker-b {
+  min-width: 525px;
+  font-size: 13px;
+  font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  -webkit-box-shadow: 0 1px 3px #bbb;
+     -moz-box-shadow: 0 1px 3px #bbb;
+          -webkit-box-shadow: 0 1px 3px #bbb;
+             box-shadow: 0 1px 3px #bbb;
+}
+.datePicker-b .datePicker-table-wrapper {
+  padding: 5px 0px 15px 0px;
+}
+.datePicker-b .datePicker-date-table {
+  padding: 0 5px;
+}
+
+.datePicker-b .table-range~.table-range {
+  border-left: 1px solid #e3e3e3;
+}
+.datePicker-date-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.datePicker-b .datePicker-date-table th {
+  color: #aaa;
+}
+.datePicker-b .datePicker-date-table td {
+  color: #07c;
+}
+.datePicker-b .datePicker-date-table th,
+.datePicker-b .datePicker-date-table td {
+  width: 36px;
+  height: 23px;
+  margin: 0;
+  padding: 0;  
+  text-align: center;
+}
+.datePicker-date-table td.other:hover {
+  cursor: default;
+}
+.datePicker-b .datePicker-date-table td:not(.other):hover {
+  background-color: #febb02;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+.datePicker-b .datePicker-date-table td.selected {
+  background-color: #003580;
+  color: white;
+}
+.datePicker-b .datePicker-date-table td.sel-left {
+  -webkit-border-top-left-radius: 3px;
+     -moz-border-radius-topleft: 3px;
+          border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+     -moz-border-radius-bottomleft: 3px;
+          border-bottom-left-radius: 3px;
+}
+.datePicker-b .datePicker-date-table td.sel-right{
+  -webkit-border-top-right-radius: 3px;
+     -moz-border-radius-topright: 3px;
+          border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+     -moz-border-radius-bottomright: 3px;
+          border-bottom-right-radius: 3px;
+}
+.datePicker-b td.gray:not(.other){
+  background-color: #eee;
+}
+.datePicker-b .datePicker-footer,
+.datePicker-b .datePicker-month,
+.datePicker-b .datePicker-title {
+  text-align: center;
+}
+.datePicker-b .datePicker-header {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.datePicker-b .datePicker-header,
+.datePicker-b .datePicker-footer {
+  border-top: 1px solid #ebebeb;
+  background-color: #f1f1f1;
+  padding: 0.4em 0;
+}
+.datePicker-b .datePicker-header {
+  background: #e9f0fa;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 14px 0 ;
+  min-height: 15px;
+}
+.datePicker-b .datePicker-footer {
+  padding: 0.4em 0;
+  background: #e9f0fa;
+}
+.datePicker-b .datePicker-month {
+  font-size: 16px;
+  padding: 0.5em 0 1em 0;
+  color: #626262;
+}
+
+.datePicker-b .datePicker-prev,
+.datePicker-b .datePicker-next {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+  top: 0.4em;}
+.datePicker-b .datePicker-prev {
+  left: 0.6em;
+  background-image: url(https://r.bstatic.com/static/img/butPrevMonth/3753f376f8fe37059e84a3ac3aa13cb5cbc459e1.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;  
+}
+.datePicker-b .datePicker-prev:hover {
+  background-position: 0 -24px; 
+}
+.datePicker-b .datePicker-next {
+  right: 0.6em;
+  background-image: url(https://r.bstatic.com/static/img/butNextMonth/dc92020627f8ae26a5d6727cef75c82262923859.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;  
+}
+.datePicker-b .datePicker-next:hover {
+  background-position: 0 -24px;
+}
+

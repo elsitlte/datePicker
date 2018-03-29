@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<title>datePicker</title>
+	<link rel="icon" id="favicon" href="https://cc.ddcdn.com/favicon.ico" type="image/x-icon">
+	<script src="./jquery.min.js"></script> 
+  <script src="./datePicker.jq.min.js"></script> 
+  <script src="./datePicker.jq.min.js.map"></script> 
+	<link rel="stylesheet" href="./datePicker.css">
+<style>
+html,body{
+	height: 100%;
+}
+</style>  
+
+</head>
+<body>
+    <input id="el0" type="text" style="margin: 100px "><br>	
+   	<input id="el1" type="text" style="margin: 100px"><br>
+   	<input id="el2" type="text" style="margin: 100px"><br>
+	<script>	
+		$.dataPicker($('#el0'));
+		$.dataPicker($('#el1'),{range:false});
+		$.dataPicker($('#el2'));
+		$("#el0").on("change",function(e,data0,data1){
+			console.log(data0);console.log(this)
+			$(this).prop("value",data0.year+":"+(data0.month+1)+":"+data0.date);
+		})
+	//$.dataPicker($('#el'),{theme:"booking"});
+	</script>
+</body>
+</html>

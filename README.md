@@ -37,13 +37,13 @@
   |range|bool|true for default.when false the selection type is not for range|  
 
   ![](./overview/datepicker-1.png)
-  tripadvisor theme
+tripadvisor theme
 
   ![](./overview/datepicker-3.png)
-  booking theme
+booking theme
 
   ![](./overview/datepicker-2.png)
-  range which is false
+range which is false
 
  ## interface
   the date format that picked is like Year/Month/date by default. but we also provide the interface for U to
@@ -63,7 +63,7 @@
   >
 
   ![](./overview/datepicker-4.png)
-  default output date format
+default output date format
 
-    ![](./overview/datepicker-5.png)
-  custom made output date format
+  ![](./overview/datepicker-5.png)
+custom made output date format

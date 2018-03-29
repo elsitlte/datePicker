@@ -59,7 +59,7 @@ range which is false
 ```
   > `data0` is the date start that selected for a date range
   > `data1` is the date end that selected for a date range
-  > the format of `data0` and `data1` is like {year:2018,month:2,date:13},mpnth is 0~11 same as parameter for new Date()
+  > the format of `data0` and `data1` is like {year:2018,month:2,date:13},month is 0~11 same as parameter for new Date()
   >
 
   ![](./overview/datepicker-4.png)

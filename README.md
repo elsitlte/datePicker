@@ -36,13 +36,16 @@
   |theme |string|theme style ,value canbe "tripadvisor" (www.tripadvisor.com)or "booking"(www.booking.com)| 
   |range|bool|true for default.when false the selection type is not for range|  
 
-  ![](./overview/datepicker-1.png)
+  ![](./overview/datepicker-1.png) <br>
+
 tripadvisor theme
 
-  ![](./overview/datepicker-3.png)
+  ![](./overview/datepicker-3.png) <br>
+
 booking theme
 
-  ![](./overview/datepicker-2.png)
+  ![](./overview/datepicker-2.png) <br>
+
 range which is false
 
  ## interface
@@ -62,8 +65,10 @@ range which is false
   > the format of `data0` and `data1` is like {year:2018,month:2,date:13},month is 0~11 same as parameter for new Date()
   >
 
-  ![](./overview/datepicker-4.png)
+  ![](./overview/datepicker-4.png) <br>
+
 default output date format
 
-  ![](./overview/datepicker-5.png)
+  ![](./overview/datepicker-5.png) <br>
+
 custom made output date format

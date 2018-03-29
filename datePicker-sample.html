@@ -24,7 +24,7 @@ html,body{
 	<script>	
 		$.dataPicker($('#el0'));
 		$.dataPicker($('#el1'),{range:false});
-		$.dataPicker($('#el2'));
+		$.dataPicker($('#el2'),{theme:"booking"});
 		$("#el0").on("change",function(e,data0,data1){
 			console.log(data0);console.log(this)
 			$(this).prop("value",data0.year+":"+(data0.month+1)+":"+data0.date);

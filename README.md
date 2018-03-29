@@ -13,7 +13,7 @@
     <script src="./datePicker.jq.min.js.map"></script> 
   </head>
   <body>
-    <input id="el" type="text" class="layui-input" id="test1"> 
+    <input id="el" type="text" class="layui-input" > 
     <script>
       $.dataPicker($('#el'));
     </script>

@@ -35,3 +35,35 @@
   |lang   |string |"cn" chinese version;"en" english version|
   |theme |string|theme style ,value canbe "tripadvisor" (www.tripadvisor.com)or "booking"(www.booking.com)| 
   |range|bool|true for default.when false the selection type is not for range|  
+
+  ![](./overview/datepicker-1.png)
+  tripadvisor theme
+
+  ![](./overview/datepicker-3.png)
+  booking theme
+
+  ![](./overview/datepicker-2.png)
+  range which is false
+
+ ## interface
+  the date format that picked is like Year/Month/date by default. but we also provide the interface for U to
+ custom made the output date format.internal we trigger a "onchange" event which contain the date information that
+ selected.So u just need to listen "onchange" event for the input element that datePicker relative to.
+ here is an example:
+
+```
+		$.dataPicker($('#el'));
+		$("#el").on("change",function(e,data0,data1){
+			$(this).prop("value",data0.year+":"+(data0.month+1)+":"+data0.date);
+		})
+```
+  > `data0` is the date start that selected for a date range
+  > `data1` is the date end that selected for a date range
+  > the format of `data0` and `data1` is like {year:2018,month:2,date:13},mpnth is 0~11 same as parameter for new Date()
+  >
+
+  ![](./overview/datepicker-4.png)
+  default output date format
+
+    ![](./overview/datepicker-5.png)
+  custom made output date format

@@ -33,8 +33,8 @@
   |option name|value type|value-describtion|
   |:---------|:-----------|:-----------|
   |lang   |string |"cn" chinese version;"en" english version|
-  |theme |string|theme style ,value canbe "tripadvisor" (www.tripadvisor.com)or "booking"(www.booking.com)| 
-  |range|bool|true for default.when false the selection type is not for range|  
+  |theme |string|theme style ,value can be "tripadvisor" (www.tripadvisor.com)or "booking"(www.booking.com)| 
+  |range|bool|true by default.when false the selection type is not for range|  
 
   ![](./overview/datepicker-1.png) <br>
 
@@ -49,16 +49,16 @@ booking theme
 range which is false
 
  ## interface
-  the date format that picked is like Year/Month/date by default. but we also provide the interface for U to
+  the date format that picked is like `Year/Month/date` by default. but we also provide the interface for U to
  custom made the output date format.internal we trigger a "onchange" event which contain the date information that
  selected.So u just need to listen "onchange" event for the input element that datePicker relative to.
  here is an example:
 
 ```
-		$.dataPicker($('#el'));
-		$("#el").on("change",function(e,data0,data1){
-			$(this).prop("value",data0.year+":"+(data0.month+1)+":"+data0.date);
-		})
+	$.dataPicker($('#el'));
+	$("#el").on("change",function(e,data0,data1){
+		$(this).prop("value",data0.year+":"+(data0.month+1)+":"+data0.date);
+	})
 ```
   > `data0` is the date start that selected for a date range
   > `data1` is the date end that selected for a date range
